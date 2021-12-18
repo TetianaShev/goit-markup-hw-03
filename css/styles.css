@@ -5,7 +5,8 @@
     --accent-color-text: #FFFFFF;
     --background-color: #2f303a;
     --logo-color: #000000;
-    --backing-color: #F5F4FA;
+    --backing-color: #7f7f81;
+    --card-set-gap: 30px
 
     /* первый цвет фона : #E5E5E5; */
     /* вторичный цвет фона : #F5F4FA; */
@@ -14,19 +15,96 @@
     /* вторичный цвет #757575; */
     /* цвет акцент #2196F3; */
 }
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 body {
     font-family: Roboto, sans-serif;
     background-color: var(--accent-color-text);
     color: var(--titles-text-color-first);
+    line-height: 1.5;
+    margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 ul {
     list-style: none;
 }
+/*container*/
+
+.container{
+    width: 1200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 15px;
+    
+    /* background-color: #ccc; */
+}
+.page-header{
+    width: 1200;
+    height: 112;
+    background-color:  rgb(71, 255, 148); 
+ }
+ .hero{
+    width: 1600;
+    height: 600;
+     background-color:  1px solid rgb(141, 71, 255); 
+  }
+  .features{
+    width: 1200;
+    height: 112;
+     background-color:  rgb(255, 227, 71); 
+  }
+  .aboutus{
+    width: 1200;
+    height: 112;
+     background-color:  rgb(255, 71, 148); 
+  }
+  .team{
+    width: 1200;
+    height: 726;  
+     background-color:  rgb(71, 212, 255); 
+  }
+  .footer{
+    width: 1200;
+    height: 112;
+    background-color:  rgb(255, 71, 215); 
+  }
+ .page-header,
+ .hero,
+ .features,
+ .aboutus,
+ .team,
+ .footer{
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+ 
+
+
 
  /* Header*/
 
 .logo-first {
-    font-family: Roboto, sans-serif;
+    font-family: Raleway;
     color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
@@ -36,7 +114,7 @@ ul {
 
 }
 .logo-second {
-    font-family: Roboto, sans-serif;
+    font-family: Raleway;
     color: var(--titles-text-color-first);
     font-weight: 700;
     font-size: 26px;
@@ -82,6 +160,7 @@ ul {
 
 
 /* Hero */
+
 .hero .hero-title{
     color: var(--accent-color-text);
     background-color: var(--titles-text-color-first);
@@ -114,14 +193,14 @@ ul {
 
   /*  Преимущества */
 
-.feature-title{
+  .feature-title{
       color: var(--titles-text-color-first);
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
-  }
+}
 .feature-text{
        color: var(--text-color);
        font-size: 14px;
@@ -129,6 +208,34 @@ ul {
        letter-spacing: 0.03em;
        text-transform: uppercase;
   }
+
+   /* Feature */
+.feature{
+    /* outline: 1px solid tomato;  */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+.feature > .item{
+    /* outline: 1px solid turquoise;  */
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+.card{
+    box-shadow: var(--card-set-gap);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.card-content{
+    padding: 15px;
+}
+
+
 
   /* Примеры работ */
 
@@ -141,37 +248,55 @@ ul {
       letter-spacing: 0.03em;
       
   }
-  
-  /*  Команда */
-
-
+  /* Team */
+ 
 .team-list{
+      /* outline: 1px solid tomato; */
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(-1 * var(--card-set-gap));
+      margin-left: calc(-1 * var(--card-set-gap));
       color: var(--titles-text-color-first);
       font-weight: 700;
       font-size: 36px;
-      line-height: 1.17;
+      line-height: 1.17px;
       text-align: center;
       letter-spacing: 0.03em;
+    }
+.team-list >.item{
+    /* outline: 1px solid teal; */
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
 }
 .team-text{
       color: var(--text-color);
       font-weight: normal;
       font-size: 16px;
-      line-height: 1.19;
+      line-height: 1.19px;
       text-align: center;
       letter-spacing: 0.03em;
 }
+
+
+
 /* Buttons */
-.care{
+.button{
     color: var(--titles-text-color-first);
     background-color: var(--backing-color);
     cursor: pointer;
 }
-.care:hover,
-.care:focus{
+.button .nav-button:hover,
+.button .nav-button:focus{
     color: var(--accent-color-text);
     background-color: var(--accent-color);
 }
+
+
+
     /* Портфолио */
 .portfolio-title{
     color: var(--titles-text-color-first);
