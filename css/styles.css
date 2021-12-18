@@ -5,7 +5,7 @@
     --accent-color-text: #FFFFFF;
     --background-color: #2f303a;
     --logo-color: #000000;
-    --backing-color: #7f7f81;
+    --backing-color: #f5f4fa;
     --card-set-gap: 30px
 
     /* первый цвет фона : #E5E5E5; */
@@ -18,11 +18,13 @@
 html{
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after{
     box-sizing: border-box;
 }
+
 body {
     font-family: Roboto, sans-serif;
     background-color: var(--accent-color-text);
@@ -30,6 +32,7 @@ body {
     line-height: 1.5;
     margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -39,6 +42,7 @@ h6,
 p{
     margin: 0;
 }
+
 img{
     display: block;
     max-width: 100%;
@@ -48,6 +52,7 @@ img{
 ul {
     list-style: none;
 }
+
 /*container*/
 
 .container{
@@ -58,37 +63,44 @@ ul {
     
     /* background-color: #ccc; */
 }
+
 .page-header{
     width: 1200;
     height: 112;
     background-color:  rgb(71, 255, 148); 
  }
+ 
  .hero{
     width: 1600;
     height: 600;
      background-color:  1px solid rgb(141, 71, 255); 
   }
+  
   .features{
     width: 1200;
     height: 112;
      background-color:  rgb(255, 227, 71); 
   }
+  
   .aboutus{
     width: 1200;
     height: 112;
      background-color:  rgb(255, 71, 148); 
   }
+  
   .team{
     width: 1200;
     height: 726;  
      background-color:  rgb(71, 212, 255); 
   }
+  
   .footer{
     width: 1200;
     height: 112;
     background-color:  rgb(255, 71, 215); 
   }
- .page-header,
+ 
+  .page-header,
  .hero,
  .features,
  .aboutus,
@@ -98,10 +110,7 @@ ul {
      padding-bottom: 20px;
  }
  
-
-
-
- /* Header*/
+/* Header*/
 
 .logo-first {
     font-family: Raleway;
@@ -122,8 +131,8 @@ ul {
     letter-spacing: 0.03em;
     
 }
-
 /* site-nav*/
+
 .site-nav .link {
     color: var(--titles-text-color-first);
     font-weight: 500;
@@ -143,6 +152,7 @@ ul {
 }
 
 /* web studio */
+
 .contact-link{
     color: var(--text-color);
     font-weight: 500;
@@ -156,9 +166,6 @@ ul {
 .contact-link:focus{
     color: var(--accent-color);
 }
-
-
-
 /* Hero */
 
 .hero .hero-title{
@@ -188,7 +195,6 @@ ul {
 .button .primary:focus{
      color: var(--accent-color-text);
      background-color: var(--accent-color);
-    
 }
 
   /*  Преимущества */
@@ -235,9 +241,7 @@ ul {
     padding: 15px;
 }
 
-
-
-  /* Примеры работ */
+/* Примеры работ */
 
 .aboutus-title{
       color: var(--titles-text-color-first);
@@ -248,6 +252,7 @@ ul {
       letter-spacing: 0.03em;
       
   }
+
   /* Team */
  
 .team-list{
@@ -334,6 +339,7 @@ ul {
     text-decoration: none;
 }
 /* Контакты */
+
 .address{
     font-style: normal;
 }
