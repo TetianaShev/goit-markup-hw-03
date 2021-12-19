@@ -6,7 +6,9 @@
     --background-color: #2f303a;
     --logo-color: #000000;
     --backing-color: #f5f4fa;
-    --card-set-gap: 30px
+    --header-color: #ececec;
+    --portfolio-color: #e5e5e5;
+    /* --card-set-gap: 30px */
 
     /* первый цвет фона : #E5E5E5; */
     /* вторичный цвет фона : #F5F4FA; */
@@ -15,43 +17,43 @@
     /* вторичный цвет #757575; */
     /* цвет акцент #2196F3; */
 }
-html{
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    background-color: var(--accent-color-text);
-    color: var(--titles-text-color-first);
-    line-height: 1.5;
-    margin: 0;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p{
-    margin: 0;
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
 img{
     display: block;
     max-width: 100%;
     height: auto;
 }
-
-ul {
-    list-style: none;
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--accent-color-text);
+    color: var(--titles-text-color-first);
+    margin: 0;
+    line-height: 1.5;
 }
+ul{
+    list-style: none;
+    padding: 0;
+}
+/* Cкрыть кнопки */
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
 
 /*container*/
 
@@ -63,55 +65,16 @@ ul {
     
     /* background-color: #ccc; */
 }
-
+/* Page-header */
 .page-header{
-    width: 1200;
-    height: 112;
-    background-color:  rgb(71, 255, 148); 
- }
- 
- .hero{
-    width: 1600;
-    height: 600;
-     background-color:  1px solid rgb(141, 71, 255); 
-  }
-  
-  .features{
-    width: 1200;
-    height: 112;
-     background-color:  rgb(255, 227, 71); 
-  }
-  
-  .aboutus{
-    width: 1200;
-    height: 112;
-     background-color:  rgb(255, 71, 148); 
-  }
-  
-  .team{
-    width: 1200;
-    height: 726;  
-     background-color:  rgb(71, 212, 255); 
-  }
-  
-  .footer{
-    width: 1200;
-    height: 112;
-    background-color:  rgb(255, 71, 215); 
-  }
- 
-  .page-header,
- .hero,
- .features,
- .aboutus,
- .team,
- .footer{
-     padding-top: 20px;
-     padding-bottom: 20px;
- }
+   border: 1px solid var(--header-color);
+}
  
 /* Header*/
-
+.header-container{
+    display: flex;
+    align-items: center;
+}
 .logo-first {
     font-family: Raleway;
     color: var(--accent-color);
