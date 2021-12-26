@@ -56,7 +56,7 @@ ul{
 /* Page-header */
 
 .page-header{
-   border: 1px solid var(--header-color);
+    border-bottom: 1px solid var(--header-color);
 }
 .header-container{
     display: flex;
@@ -81,16 +81,17 @@ ul{
     background-color: var(--accent-color-text);
 }
 .nav-logo{
-    margin-right: 93px;
-    text-decoration: none;
-}
-.logo-web {
     font-family: Raleway, sans-serif;
     color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    
+    text-decoration: none;
+}
+.logo-web {
+    
 }
 .logo-studio {
     font-family: Raleway, sans-serif;
@@ -166,21 +167,21 @@ ul{
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    color: var(--accent-color-text);
     background-color: var(--background-color);
 }
-.hero-title .centered{
+.hero-title .centered {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--accent-color-text);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    
 }
 /* Hero button */
 
@@ -232,12 +233,12 @@ ul{
 }
 /* Примеры работ */
 
-.aboutus-us-section{
+.about-us-section{
     text-align: center;
     padding-top: 0px;
     padding-bottom: 94px;
 }
-.aboutus-us-title{
+.about-us-title{
       color: var(--titles-text-color-first);
       font-weight: 700;
       font-size: 36px;
@@ -245,15 +246,15 @@ ul{
       text-align: center;
       letter-spacing: 0.03em;
 }
-.aboutus-us-list{
+.about-us-list{
     display: flex;
     margin-top: 50px;
     margin-left: -30px;
 }
-.aboutus-us-item{
+.about-us-item{
     margin-left: 30px;
 }
-/* .aboutus-us-item:first-child{
+/* .about-us-item:first-child{
     margin-left: 0px;
 } */
 
@@ -273,9 +274,9 @@ ul{
 .team-head-title{
     margin-bottom: 50px;
     color: var(--titles-text-color-first);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -296,18 +297,17 @@ ul{
 }
 .title{
     color: var(--titles-text-color-first);
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
 .text{
       color: var(--text-color);
       margin-top: 10px;
-      font-weight: normal;
       font-size: 16px;
-      line-height: 1.19px;
+      line-height: 1.19;
       text-align: center;
       letter-spacing: 0.03em;
 }
@@ -318,12 +318,13 @@ ul{
 .btn{
     color: var(--titles-text-color-first);
     background-color: var(--backing-color);
-    padding: 8px 22 px;
+    padding: 8px 22px;
     border: 1px solid transparent;
     border-style: none;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    font-size: 16px;
 }
 .btn:hover,
 .btn:focus{
@@ -365,9 +366,9 @@ ul{
 }
 .portfolio-name{
     padding: 20px 24px;
-    border-bottom: 1px solid #eeeee;
-    border-right: 1px solid #eeeee;
-    border-left: 1px solid #eeeee;
+    border-bottom: 1px solid #eeeeee ;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
 }
 .flex-container{
     display: flex;
@@ -376,7 +377,7 @@ ul{
 .flex-element{
     width: calc((100%-60) / 3);
 }
-.flex-element:nth-child(3n){
+.flex-element:nth-child(3n) {
     margin-right: 0;
 }
 
