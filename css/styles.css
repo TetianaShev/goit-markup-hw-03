@@ -81,17 +81,16 @@ ul{
     background-color: var(--accent-color-text);
 }
 .nav-logo{
+    margin-right: 93px;
+    text-decoration: none;
+}
+.logo-web {
     font-family: Raleway, sans-serif;
     color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    
-    text-decoration: none;
-}
-.logo-web {
-    
 }
 .logo-studio {
     font-family: Raleway, sans-serif;
@@ -171,15 +170,17 @@ ul{
     background-color: var(--background-color);
 }
 .hero-title .centered {
+    position: absolute;
     text-align: center;
     margin-bottom: 30px;
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    color: var(--accent-color-text);
+    align: center;
+    color: rgba(255, 255, 255, 1);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 60px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -412,6 +413,10 @@ ul{
 .address{
     font-style: normal;
     margin-top: 20px;
+    
+}
+.address-list{
+    margin-top: 9px;
 }
 .footer-map{
     color: var(--accent-color-text);
@@ -420,8 +425,9 @@ ul{
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-top: 9px;
 }
-.footer-adress {
+.footer-address {
     display: inline-block;
     margin-top: 9px;
     display: block;
